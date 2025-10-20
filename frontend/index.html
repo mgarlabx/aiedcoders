@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Ed Coders</title>
+    <link rel="stylesheet" href="style.css?v=1.3">
+    <link rel="stylesheet" href="components/chart.css?v=1.3">
+    <link rel="stylesheet" href="components/table.css?v=1.3">
+</head>
+<body>
+    <div id="graph-container">
+        <div id="cy"></div>
+        
+        <!-- Cabeçalho -->
+        <div id="header">
+            <h1 id="main-title">Grupo AI Ed Coders</h1>
+            <p id="subtitle">programadores apaixonados por IA na educação</p>
+        </div>
+        
+        <!-- Caixa de Busca (Rodapé) -->
+        <div id="search-container">
+            <div id="search-box">
+                <input type="text" id="search-input" placeholder="Buscar membros, organizações ou tipos...">
+                <button id="search-clear" title="Limpar busca">&times;</button>
+            </div>
+            <div id="search-results" class="hidden"></div>
+        </div>
+        
+        <!-- Controles de Zoom -->
+        <div id="zoom-controls">
+            <button id="zoom-in" title="Aumentar Zoom">+</button>
+            <button id="zoom-out" title="Diminuir Zoom">−</button>
+            <button id="zoom-fit" title="Ajustar à Tela">⊡</button>
+            <button id="zoom-reset" title="Reset Zoom">↻</button>
+        </div>
+        
+        <!-- Controles de Layout -->
+        <div id="layout-controls">
+            <button id="layout-cose" class="active" title="Layout Orgânico">🌐</button>
+            <button id="layout-circle" title="Layout Circular">⭕</button>
+            <!-- <button id="layout-grid" title="Layout Grade">⊞</button> -->
+            <button id="layout-table" title="Layout Tabela">⊞</button>
+        </div>
+        
+        <div id="node-info" class="hidden">
+            <div class="info-header">
+                <h2 id="node-title">Node Information</h2>
+                <button id="close-info">&times;</button>
+            </div>
+            <div id="info-content"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/cytoscape@3.26.0/dist/cytoscape.min.js"></script>
+
+    <script src="components/chart.js?v=1.3"></script>
+    <script src="components/table.js?v=1.3"></script>
+    <script src="components/app.js?v=1.3"></script>
+    <script src="script.js?v=1.3"></script>
+</body>
+</html>
