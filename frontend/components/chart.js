@@ -648,7 +648,7 @@ function prepareGraphElements(graphData) {
                 elements.push({
                     data: {
                         id: nodeId,
-                        label: org.title || org.label || `Org ${orgId}`,
+                        label: org.label || org.title || `Org ${orgId}`,
                         type: 'organization',
                         properties: org,
                         originalWidth: 40,
